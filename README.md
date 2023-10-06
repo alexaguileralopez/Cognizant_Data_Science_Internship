@@ -59,9 +59,9 @@ In this task, we are preparing a python module that implements the algorithm on 
 
     if __name__ == '__main__':
 
-    df = load_csv() 
-    X,y = create_target_and_predictors(data= df)
-    train_algorithm_with_cross_validation(X,y)
+        df = load_csv() 
+        X,y = create_target_and_predictors(data= df)
+        train_algorithm_with_cross_validation(X,y)
 
 
 
