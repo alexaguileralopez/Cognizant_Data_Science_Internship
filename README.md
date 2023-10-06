@@ -8,7 +8,7 @@ The company approached Cognizant to help them with a supply chain issue. Groceri
 
 The client has provided us with a sample of their sales data. In this task, that dataset will be analysed to get some basic information out of a sample of their data. 
 
-The code for this task is [here](TASK 1/eda.ipynb)
+The code for this task is [here](<TASK 1/eda.ipynb>)
 
 The results lead to the following conclusion:
 
@@ -27,7 +27,7 @@ Based on the previous analysis, the client wants to focus on the following state
 
 We receive extra information, we now have 3 datasets:
 
-![datasets](<TASK 2/Imagen 1.png>)
+![datasets](<TASK 2/datasets.png>)
 
 Now we can create a strategic plan to approach the problem. The plan is in [strategicplan](<TASK 2/Presentación1.pptx>)
 
@@ -38,10 +38,10 @@ Now that we have 3 datasets, we clean them, merge them, and perform feature engi
 
 The model is built using the sklearn package. In this case, we are using a Random Forest Regressor. The model loads the engineered data into a model class, that uses the Random Forest Algorithm to predict stock percentage with all the features developed. Using k-fold cross-validation, we get a Mean Absolute Error of 0.24. 
 
-The code for this task is under [modelling](<TASK 3/modelling.ipynb>)
+The code for this task is under [modelling](<TASK 3/modeling.ipynb>)
 
 Using Matplotlib, we can get a graph that shows the importance of the features when predicting the stock percentage:
-![results](<TASK 3/output 1.png>)
+![results](<TASK 3/output_1.png>)
 
 These results are better visualised in a pie chart: 
 
