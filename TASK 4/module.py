@@ -7,6 +7,21 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import StandardScaler
     
+# Load data
+def load_csv(path: str = "/path/to/csv/"):
+    """
+    This function takes a path string to a CSV file and loads it into
+    a Pandas DataFrame.
+
+    :param      path (optional): str, relative path of the CSV file
+
+    :return     df: pd.DataFrame
+    """
+
+    df = pd.read_csv(f"{path}")
+    df.drop(columns=["Unnamed: 0"], inplace=True, errors='ignore')
+    return df
+
 # Create target variable and predictor variables
 def create_target_and_predictors(
     data: pd.DataFrame = None, 
@@ -76,7 +91,7 @@ if __name__ == '__main__':
 
     # load_data was created for example usage
     #df = load_data()
-    df = None
+    df = load_csv()
     X,y = create_target_and_predictors(data= df)
     train_algorithm_with_cross_validation(X,y)
 
